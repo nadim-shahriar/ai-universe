@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>🎲 Ai Universe</title>
+</head>
+
+<body class="container mx-auto">
+    <header class="text-center mt-5">
+        <h1 class="text-6xl font-bold">AI Universe Hub</h1>
+        <button class="btn bg-[#EB5757] text-white my-5">Short By Date</button>
+    </header>
+    <main>
+        <section>
+            <div id="features-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-6">
+            </div>
+            <div id="see-more-container" class="text-center hidden">
+                <button onclick="handleSeeMore()" class="btn bg-[#EB5757] text-white mb-20">See More</button>
+            </div>
+        </section>
+
+        <!-- show modal -->
+        <!-- You can open the modal using ID.showModal() method -->
+        <dialog id="show_details_modal" class="modal">
+            <div class="modal-box w-11/12 max-w-5xl">
+                <div id="show-details-container">
+
+                </div>
+            </div>
+            <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+            </form>
+        </dialog>
+
+        <!-- spinner -->
+        <div id="loading-spinner" class="text-center hidden">
+            <span class="loading loading-bars loading-lg"></span>
+        </div>
+    </main>
+
+
+
+
+    <script src="js/ai-universe.js"></script>
+</body>
+
+</html>
